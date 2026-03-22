@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Orders</title>
+ </head>
+ <body>
+ 
+ <h2>Orders</h2>
+ 
+ <ul>
+    {% for o in orders %}
+         <li>
+             <b>{{ o[1] }}</b> | {{ o[2] }}
+<br>
+          {{ o[3] }}
+          </li>
+          <hr>
+        {% endfor %}
+       </ul>
+       
+       <a href="/">Back</a>
+       
+       </body>
+       </html>
